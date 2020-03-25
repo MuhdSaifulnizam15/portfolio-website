@@ -5,19 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
+    <!-- FontAawesome CSS File -->
+    <link rel="stylesheet" href="./css/all.css">
+
     <!-- Bootstrap CSS File -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!-- Header Area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3 bg-black">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <a href="#" class="navbar-brand text-uppercase font-staat font-size-40">MS</a>
+                        <p class="description  text-uppercase font-oswald">Muhd Saiful</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Home</a>
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">About</a>
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Services</a>
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Portfolio</a>
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">News</a>
+                        <a href="#" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button class="toggle-button"><span><i class="fas fa-bars fa-2x"></i></span></button>
+        <div class="social">
+            <span class="mr-3"><i class="fab fa-instagram"></i></span>
+            <span class="mr-3"><i class="fab fa-facebook"></i></span>
+            <span class="mr-3"><i class="fab fa-github"></i></span>
+            <span class="mr-3"><i class="fab fa-linkedin"></i></span>
+        </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Main Area -->
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+                <!-- Site Banner Area -->
+                <section class="site-banner" id="home">
+                    <div class="banner-area">
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            <h1 class="text-white font-staat font-size-40 text-uppercase py-3">Muhammad Saifulnizam</h1>
+                            
+                            <h5 class="text-white font-abel font-size-27
+                                text-capitalize">i'm <span id="typed"></span></h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Site Banner Area -->
+
+                <!-- About Us Area  -->
+                <section class="about-us px-4 my-5">
+                    <div class="me py-5">
+                        <h5 class="text-uppercase font-oswald font-size-16 text-muted">information</h5>
+                        <h1 class="text-uppercase font-staat font-size-24">About Me</h1>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-5 pl-0">
+                            <img src="./assets/about.jpg" alt="profile image" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="text-uppercase font-oswald font-size-16 text-muted">About Me</h6>
+                            <h5 class="font-rambla font-size-20 py-2">I'm Muhd Saifulnizam & <span id="typed2"></span></h5>
+                            <p class="font-rambla text-black-50 py-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate nulla, minus molestias, vero numquam doloremque perspiciatis delectus velit quasi laborum nemo, sunt quibusdam recusandae placeat accusantium deserunt porro asperiores.
+                            </p>
+
+                            <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                                <div class="d-flex flex-column">
+                                    <p class="font-rambla"><b>Birth Date:</b> <span class="text-black-50">27 August 1998</span></p>
+                                    <p class="font-rambla"><b>Website:</b> <span class="text-black-50">www.mywebsite.com.my</span></p>
+                                    <p class="font-rambla"><b>Phone:</b> <span class="text-black-50">+60 0182446467</span></p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p class="font-rambla"><b>Degree:</b> <span class="text-black-50">Computer Science (Game Development)</span></p>
+                                    <p class="font-rambla"><b>Email:</b> <span class="text-black-50">muhammadaifulnizam1998@gmail.com</span></p>
+                                    <p class="font-rambla"><b>Instagram:</b> <span class="text-black-50">muhdxsaiful98</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End About Us Area  -->
+            </div>
+        </div>
+    </main>
+    <!-- Main Area -->
+
     <!-- JQuery JS File -->
     <script src="./js/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap JS File -->
     <script src="./js/bootstrap.min.js"></script>
+
+    <!-- Typed JS File -->
+    <script src="./vendor/typed/typed.min.js"></script>
 
     <!-- Main JS File -->
     <script src="./js/main.js"></script>

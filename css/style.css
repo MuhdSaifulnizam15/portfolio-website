@@ -1,1 +1,157 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+/* import fonts from fonts.css files */
+@import url(./fonts.css);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-border: #ffffff34;
+
+    /* Fonts */
+    --font-roboto: "Roboto", cursive;
+    --font-abel: 'Abel', cursive;
+    --font-lexend: 'Lexend', cursive;
+    --font-rambla: "Rambla", sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-staat: 'Staatliches', cursive;
+}
+
+/* Global Classes */
+
+/* Font Family Class */
+.font-roboto {
+    font: normal 400 18px var(--font-roboto);
+}
+
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+
+.font-abel {
+    font: normal 400 18px var(--font-abel);
+}
+
+.font-lexend {
+    font: normal 400 18px var(--font-lexend);
+}
+
+.font-rambla {
+    font: normal bold 18px var(--font-rambla);
+}
+
+.font-oswald {
+    font: normal 300 18px var(--font-oswald);
+}
+/* Font Family Class */
+
+/* Background Color Class */
+.bg-black {
+    background-color: var(--color-black);
+}
+/* Background Color Class */
+
+/* Font Size Class*/
+.font-size-40 {
+    font-size: 40px;
+}
+
+.font-size-34 {
+    font-size: 34px;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+/* Font Size Class*/
+
+/* End Global Classes */
+
+/* Header */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: left 0.5s ease;
+}
+
+#header nav {
+    height: 100vh;
+}
+
+#header .site-title .navbar-brand {
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link {
+    margin: 0.6rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+    color: var(--color-white) !important;
+}
+
+#header .toggle-button {
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left {
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* End Header */
+
+/* Main Area */
+/* Site Main */
+.site-banner .banner-area {
+    background: url(../assets/Banner_image.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url("../assets/about.jpg") no-repeat;
+    background-size: 200%;
+    background-position: 40% 0;
+}
+
+/* End Site Main */
+/* End Main Area */ 
