@@ -1,60 +1,11 @@
 /* import fonts from fonts.css files */
 @import url(./fonts.css);
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    /* Colors */
-    --color-black: #000000;
-    --color-white: #ffffff;
-    --color-border: #ffffff34;
-
-    /* Fonts */
-    --font-roboto: "Roboto", cursive;
-    --font-abel: 'Abel', cursive;
-    --font-lexend: 'Lexend', cursive;
-    --font-archivo: "Archivo_Narrow", sans-serif;
-    --font-montserrat: "Montserrat", sans-serif;
-    --font-sourceSansPro: 'SourceSansPro', sans-serif;
-}
-
-/* Global Classes */
-
-/* Background Color Class */
-.bg-black {
-    background-color: var(--color-black);
-}
-/* Background Color Class */
-
-/* Font Size Class*/
-.font-size-40 {
-    font-size: 40px;
-}
-
-.font-size-34 {
-    font-size: 34px;
-}
-
-.font-size-27 {
-    font-size: 27px;
-}
-
-.font-size-20 {
-    font-size: 20px;
-}
-
-.font-size-16 {
-    font-size: 16px;
-}
-/* Font Size Class*/
-
-/* End Global Classes */
+/* import CSS Variables */
+@import url(./partials/_variables.css);
+/* import global styling */
+@import url(./partials/_globals.css);
 
 /* Header */
-
 #header {
     position: fixed;
     top: 0;
@@ -70,11 +21,16 @@ body {
 
 #header .site-title .navbar-brand {
     letter-spacing: 2px;
-    color: var(--color-white);
+    color: var(--primary-color);
+    font: normal bold 24px/12px var(--font-sourceSansPro);
+}
+
+#header .site-title .navbar-brand-desc {
+    font: normal bold 18px/12px var(--font-archivo);
 }
 
 #header .nav-link {
-    margin: 0.6rem 1rem;
+    margin: 0.5rem 1rem;
     border-bottom: 1px solid var(--color-border);
     text-transform: uppercase;
 }
