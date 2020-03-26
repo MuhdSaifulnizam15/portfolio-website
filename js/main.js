@@ -16,7 +16,7 @@ $(document).ready(function(e) {
 });
 
 function toggle_onclick($win, $navbar, width){
-    if($win.width() <= 786){
+    if($win.width() <= 767){
         $navbar.css({left: `-${width}px`});
     } else {
         $navbar.css({left: '0px'});
@@ -43,4 +43,14 @@ var typed2 = new Typed('#typed2', {
     typeSpeed: 50,
     backSpeed: 50,
     loop: true
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e){
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

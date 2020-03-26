@@ -16,38 +16,12 @@ body {
     --font-roboto: "Roboto", cursive;
     --font-abel: 'Abel', cursive;
     --font-lexend: 'Lexend', cursive;
-    --font-rambla: "Rambla", sans-serif;
-    --font-oswald: "Oswald", sans-serif;
-    --font-staat: 'Staatliches', cursive;
+    --font-archivo: "Archivo_Narrow", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-sourceSansPro: 'SourceSansPro', sans-serif;
 }
 
 /* Global Classes */
-
-/* Font Family Class */
-.font-roboto {
-    font: normal 400 18px var(--font-roboto);
-}
-
-.font-staat{
-    font: normal 400 18px var(--font-staat);
-}
-
-.font-abel {
-    font: normal 400 18px var(--font-abel);
-}
-
-.font-lexend {
-    font: normal 400 18px var(--font-lexend);
-}
-
-.font-rambla {
-    font: normal bold 18px var(--font-rambla);
-}
-
-.font-oswald {
-    font: normal 300 18px var(--font-oswald);
-}
-/* Font Family Class */
 
 /* Background Color Class */
 .bg-black {
@@ -86,7 +60,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     transition: left 0.5s ease;
 }
 
@@ -127,6 +101,7 @@ body {
 
 /* Main Area */
 /* Site Main */
+
 .site-banner .banner-area {
     background: url(../assets/Banner_image.jpg) no-repeat;
     background-size: cover;
@@ -153,5 +128,29 @@ body {
     background-position: 40% 0;
 }
 
+.skill .bars p, 
+.site-content .skill .bars span {
+    line-height: 10px;
+}
+
+#footer form .row .col input[type="text"], 
+#footer form .row .col input[type="email"], 
+#footer form textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+
 /* End Site Main */
 /* End Main Area */ 
+
+@media screen and (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+    #header {
+        z-index: 0;
+    }
+}

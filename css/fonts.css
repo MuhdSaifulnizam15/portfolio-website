@@ -1,16 +1,6 @@
 /* Font-Face */
 
 @font-face {
-    font-family: 'Oswald';
-    src: '../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf';
-}
-
-@font-face {
-    font-family: 'Rambla';
-    src: '../assets/fonts/Rambla/Rambla-Bold.ttf';
-}
-
-@font-face {
     font-family: 'Roboto';
     src: '../assets/fonts/Roboto/Roboto-Regular.ttf';
 }
@@ -26,6 +16,16 @@
 }
 
 @font-face {
-    font-family: 'Staatliches';
-    src: '../assets/fonts/Staatliches/Staatliches-Regular.ttf';
+    font-family: 'Montserrat';
+    src: '../assets/fonts/Montserrat/Montserrat-Regular.ttf';
+}
+
+@font-face {
+    font-family: 'Archivo_Narrow';
+    src: '../assets/fonts/Archivo_Narrow/ArchivoNarrow-Regular.ttf';
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: '../assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf';
 }
