@@ -79,9 +79,9 @@
     height: 200px;
     border-radius: 50%;
     margin: auto;
-    background: url("../assets/about.jpg") no-repeat;
-    background-size: 200%;
-    background-position: 40% 0;
+    background: url("../assets/about.jpeg") no-repeat;
+    background-size: 180%;
+    background-position: 50% 40%;
 }
 
 .skill .bars p, 

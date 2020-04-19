@@ -1,8 +1,8 @@
 /* Global Classes */
 
 /* Background Color Class */
-.bg-black {
-    background-color: var(--color-black);
+.bg-color {
+    background-color: var(--primary-color1);
 }
 /* Background Color Class */
 

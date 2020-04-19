@@ -25,9 +25,9 @@ function toggle_onclick($win, $navbar, width){
 
 var typed = new Typed('#typed', {
     strings: [
-        "Web Developer",
-        "Game Developer",
-        "Mobile App Developer"
+        "Fresh Graduate From MMU Cyberjaya",
+        "I'm 22 Years old",
+        "I'm from Puchong, Selangor"
     ],
     typeSpeed: 50,
     backSpeed: 50,
