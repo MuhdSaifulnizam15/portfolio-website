@@ -22,18 +22,18 @@
 #header .site-title .navbar-brand {
     letter-spacing: 2px;
     color: var(--color-black);
-    font: normal bold 30px/15px var(--font-sourceSansPro);
+    font: normal bold 30px/15px var(--font-montserrat);
 }
 
 #header .site-title .navbar-brand-desc {
-    font: normal bold 24px/12px var(--font-archivo);
+    font: normal bold 24px/12px var(--font-montserrat);
 }
 
 #header .nav-link {
     margin: 0.5rem 1rem;
     border-bottom: 1px solid var(--secondary-color4);
     text-transform: uppercase;
-    font: var(--font-archivo);
+    font-family: var(--font-roboto);
     font-size: 22px;
 }
 
@@ -85,6 +85,17 @@
     transform: translate(-50%, -50%);
 }
 
+.site-banner .banner-area .author h1{
+    font-family: var(--font-montserrat);
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.site-banner .banner-area .author h5{
+    font-family: var(--font-montserrat);
+    font-size: 28px;
+}
+
 .site-banner .banner-area .author .author-img {
     width: 200px;
     height: 200px;
@@ -93,6 +104,14 @@
     background: url("../assets/about.jpeg") no-repeat;
     background-size: 180%;
     background-position: 50% 40%;
+}
+
+.about-us {
+    font-family: var(--font-archivo);
+}
+
+.about-us button:hover{
+    background-color: var(--secondary-color1);
 }
 
 .skill .bars p, 
@@ -112,6 +131,19 @@
 .footer-copyright {
     margin-left: -25px;
     margin-right: -25px;
+}
+
+.move-up {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2.5rem;
+    color: grey;
+}
+
+.move-up span:hover{
+    color: black;
+    opacity: 0.7;
 }
 
 /* End Site Main */

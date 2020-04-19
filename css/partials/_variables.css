@@ -13,7 +13,7 @@ html, body {
     --color-white: #ffffff;
 
     --secondary-color1: #96858f;  /*Dusty*/
-    --secondary-color2: #6d7993;  /*Lavender*/
+    --secondary-color2: #95a6ca;  /*Lavender*/
     --secondary-color3: #9099a2;  /*Overcast*/
     --secondary-color4: #d5d5d5;  /*Paper*/
     --gradient-color: linear-gradient(90deg, #464159 0%, #6c7b95 100%);
@@ -21,9 +21,6 @@ html, body {
 
     /* Font Family variables */
     --font-roboto: "Roboto", cursive;
-    --font-abel: 'Abel', cursive;
-    --font-lexend: 'Lexend', cursive;
     --font-archivo: "Archivo_Narrow", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
-    --font-sourceSansPro: 'SourceSansPro', sans-serif;
 }
