@@ -21,22 +21,24 @@
 
 #header .site-title .navbar-brand {
     letter-spacing: 2px;
-    color: var(--primary-color);
-    font: normal bold 24px/12px var(--font-sourceSansPro);
+    color: var(--color-black);
+    font: normal bold 30px/15px var(--font-sourceSansPro);
 }
 
 #header .site-title .navbar-brand-desc {
-    font: normal bold 18px/12px var(--font-archivo);
+    font: normal bold 24px/12px var(--font-archivo);
 }
 
 #header .nav-link {
     margin: 0.5rem 1rem;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--secondary-color4);
     text-transform: uppercase;
+    font: var(--font-archivo);
+    font-size: 22px;
 }
 
 #header .nav-link:hover {
-    color: var(--color-white) !important;
+    color: var(--secondary-color4) !important;
 }
 
 #header .toggle-button {
@@ -45,7 +47,7 @@
     position: fixed;
     top: 25px;
     right: 20px;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--secondary-color4);
 }
 
 .toggle-left {
@@ -58,9 +60,18 @@
 /* Main Area */
 /* Site Main */
 
+#canvas-basic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .site-banner .banner-area {
-    background: url(../assets/Banner_image.jpg) no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -98,6 +109,11 @@
     padding: 1.5rem 1rem;
 }
 
+.footer-copyright {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
 /* End Site Main */
 /* End Main Area */ 
 
@@ -108,5 +124,21 @@
 
     #header {
         z-index: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #header .site-title .navbar-brand {
+        font: normal bold 24px/12px var(--font-sourceSansPro);
+    }
+
+    #header .site-title .navbar-brand-desc {
+        font: normal bold 20px/12px var(--font-archivo);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px){
+    #header .site-title .navbar-brand {
+        font: normal bold 20px/10px var(--font-sourceSansPro);
     }
 }

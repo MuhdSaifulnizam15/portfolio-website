@@ -54,3 +54,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
+
+/* Create a Granim instance */
+var granimInstance = new Granim({
+    element: '#canvas-basic',
+    name: 'granim',
+    opacity: [1, 1],
+    states : {
+        "default-state": {
+            gradients: [
+                ['#93A5CF', '#E4EFE9'], 
+                ['#A3BDED', '#6991C7'],
+                ['#A1C4FD', '#C2E9FB'],
+                ['#CFD9DF', '#E2EBF0'],
+                ['#29323C', '#485563']
+            ]
+        }
+    }
+ });

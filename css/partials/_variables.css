@@ -11,15 +11,11 @@ html, body {
     /* Colors */
     --color-black: #000000;
     --color-white: #ffffff;
-    --color-border: #ffffff34;
 
-    --primary-color1: #464159;
-    --primary-color2: #6c7b95;
-    --primary-color3: #8bbabb;
-    --primary-color4: #c7f0db;
-    --title-color: #141313;
-    --text-color: #777777;
-    --border-color: #ffffff34;
+    --secondary-color1: #96858f;  /*Dusty*/
+    --secondary-color2: #6d7993;  /*Lavender*/
+    --secondary-color3: #9099a2;  /*Overcast*/
+    --secondary-color4: #d5d5d5;  /*Paper*/
     --gradient-color: linear-gradient(90deg, #464159 0%, #6c7b95 100%);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 

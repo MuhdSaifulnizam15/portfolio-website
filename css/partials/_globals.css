@@ -1,9 +1,18 @@
 /* Global Classes */
 
 /* Background Color Class */
-.bg-color {
-    background-color: var(--primary-color1);
+.bg-color-lavender {
+    background-color: var(--secondary-color2);
 }
+
+.bg-color-overcast {
+    background-color: var(--secondary-color3);
+}
+
+.bg-color-paper {
+    background-color: var(--secondary-color4);
+}
+
 /* Background Color Class */
 
 /* Font Size Class*/

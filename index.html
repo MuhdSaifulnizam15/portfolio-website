@@ -18,20 +18,20 @@
     <!-- Header Area -->
     <header id="header">
         <div class="row m-0">
-            <div class="col-3 bg-color">
+            <div class="col-3 bg-color-lavender">
                 <nav class="primary-nav navbar-expand-md">
-                    <div class="site-title text-center text-light pt-4 pb-3">
+                    <div class="site-title text-center text-dark pt-4 pb-3">
                         <a href="#" class="navbar-brand text-uppercase">My Portfolio</a>
-                        <p class="description  text-uppercase navbar-brand-desc mt-2">Muhd Saiful</p>
+                        <p class="description text-uppercase navbar-brand-desc mt-3">Muhd Saiful</p>
                     </div>
                     <div class="d-flex flex-column">
-                        <a href="#home" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Home</a>
-                        <a href="#about" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">About</a>
-                        <a href="#skill" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Skills</a>
-                        <a href="#service" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Services</a>
-                        <a href="#work" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Portfolio</a>
-                        <a href="#news" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">News</a>
-                        <a href="#footer" class="nav-item nav-link text-white-50 font-oswald font-size-16 active">Contact Us</a>
+                        <a href="#home" class="nav-item nav-link text-dark active">Home</a>
+                        <a href="#about" class="nav-item nav-link text-dark active">About</a>
+                        <a href="#skill" class="nav-item nav-link text-dark active">Skills</a>
+                        <a href="#service" class="nav-item nav-link text-dark active">Services</a>
+                        <a href="#work" class="nav-item nav-link text-dark active">Portfolio</a>
+                        <a href="#news" class="nav-item nav-link text-dark active">News</a>
+                        <a href="#footer" class="nav-item nav-link text-dark active">Contact Us</a>
                     </div>
                 </nav>
             </div>
@@ -46,10 +46,11 @@
             <div class="col-md-9 offset-md-3 px-0">
                 <!-- Site Banner Area -->
                 <section class="site-banner" id="home">
-                    <div class="banner-area">
+                    <div class="banner-area" id="particles-js">
+                        <canvas id="canvas-basic"></canvas>
                         <div class="author text-center">
                             <div class="author-img"></div>
-                            <h1 class="text-white font-staat font-size-40 text-uppercase py-3">Muhammad Saifulnizam</h1>
+                            <h1 class="text-white text-uppercase py-3">Muhammad Saifulnizam</h1>
                             
                             <h5 class="text-white font-abel font-size-27
                                 text-capitalize"><span id="typed"></span></h5>
@@ -59,7 +60,7 @@
                 <!-- End Site Banner Area -->
 
                 <!-- About Us Area  -->
-                <section class="about-us px-4 py-4" id="about">
+                <section class="about-us px-4 py-4 bg-color-overcast" id="about">
                     <div class="me py-2">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">information</h5>
                         <h1 class="text-uppercase font-staat font-size-24">About Me</h1>
@@ -98,7 +99,7 @@
                 <!-- End About Us Area  -->
 
                 <!-- Skill Area -->
-                <section class="skill px-4 py-4 bg-light" id="skill">
+                <section class="skill px-4 py-4 bg-color-paper" id="skill">
                     <div class="ability py-3">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">ability</h5>
                         <h1 class="text-uppercase font-staat font-size-24">My Skills</h1>
@@ -158,7 +159,7 @@
                 <!-- End Skill Area -->
 
                 <!-- Services Area -->
-                <section class="service-area px-4 py-4" id="service">
+                <section class="service-area px-4 py-4 bg-color-overcast" id="service">
                     <div class="service py-5">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">What i do</h5>
                         <h1 class="text-uppercase font-staat font-size-24">Services</h1>
@@ -223,7 +224,7 @@
                 <!-- End Services Area -->
 
                 <!-- References Area -->
-                <section class="reference-area bg-light py-4 px-4" id="reference">
+                <section class="reference-area py-4 px-4 bg-color-paper" id="reference">
                     <div class="reference py-5">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">My Reference</h5>
                         <h1 class="text-uppercase font-staat font-size-24">References</h1>
@@ -243,7 +244,7 @@
                 <!-- End References Area -->
 
                 <!-- Work Area -->
-                <section class="work-area py-4 px-4" id="work">
+                <section class="work-area py-4 px-4 bg-color-overcast" id="work">
                     <div class="work py-3">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">Creative Work</h5>
                         <h1 class="text-uppercase font-staat font-size-24">Recent Project</h1>
@@ -272,7 +273,7 @@
                 <!-- End Work Area -->
 
                 <!-- News Area -->
-                <section class="news-area py-5 px-4 bg-light" id="news">
+                <section class="news-area py-5 px-4 bg-color-paper" id="news">
                     <div class="news py-3">
                         <h5 class="text-uppercase font-oswald font-size-16 text-muted">Latest News</h5>
                         <h1 class="text-uppercase font-staat font-size-24">Ongoing Project</h1>
@@ -313,7 +314,7 @@
                 <!-- End News Area -->
 
                 <!-- Footer Area -->
-                <footer id="footer" class="pt-5 px-4">
+                <footer id="footer" class="pt-5 px-4 bg-color-overcast">
                     <div class="contact-us">
                         <div id="py-3 px-2">
                             <h5 class="text-uppercase font-oswald font-size-16 text-muted">Location</h5>
@@ -346,7 +347,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="row bg-light py-5">
+                        <div class="row bg-color-paper py-5 footer-copyright">
                             <div class="col-sm-12 col-md-12 col-lg-4 my-5 text-center">
                                 <h6 class="font-rambla font-size-16 text-black-50">Copyright &copy; 2020 All Rights Reserved. This Template is made using Bootstrap 4.</h6>
                             </div>
@@ -370,6 +371,12 @@
         </div>
     </main>
     <!-- Main Area -->
+
+    <!-- Granim JS File -->
+    <script src="./vendor/Granim/granim.min.js"></script>
+
+    <!-- Particles JS File -->
+    <script src="./vendor/particles/particles.js"></script>
 
     <!-- JQuery JS File -->
     <script src="./js/jquery-3.4.1.min.js"></script>
