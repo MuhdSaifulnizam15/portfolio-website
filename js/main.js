@@ -27,15 +27,14 @@ $(window).scroll(function() {
     var height = $(window).scrollTop();
     if(height > 600){
         $('.move-up').fadeIn();
-        $('.move-up').style.visibility = "visible";
     } else {
         $('.move-up').fadeOut();
-        $('.move-up').style.visibility = "hidden";
     }
 });
 
 function toggle_onclick($win, $navbar, width){
     if($win.width() <= 767){
+        
         $navbar.css({left: `-${width}px`});
     } else {
         $navbar.css({left: '0px'});
@@ -120,4 +119,12 @@ var granimInstance = new Granim({
   
   });
 
-  
+  //Send Email
+  function mailTo(){
+        var input = document.getElementById('name');
+        name = input.value;
+        var input = document.getElementById('message');
+        message = input.value;
+
+        window.location.href = "mailto:muhammadsaifulnizam@gmail.com" + "?subject=Inquiries from your portfolio website" + "&body=My name is " + name + " and here is my message. " + message;
+  }
